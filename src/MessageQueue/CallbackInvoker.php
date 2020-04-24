@@ -58,11 +58,16 @@ class CallbackInvoker implements CallbackInvokerInterface
             $message = $queue->dequeue();
             // phpcs:ignore Magento2.Functions.DiscouragedFunction
 
+            if ($message === null) {
+                break;
+            }
+
             if (false === $this->poisonPillCompare->isLatestVersion($this->poisonPillVersion)) {
                 $queue->reject($message);
                 // phpcs:ignore Magento2.Security.LanguageConstruct.ExitUsage
                 exit(0);
             }
+
             $callback($message);
         }
     }
