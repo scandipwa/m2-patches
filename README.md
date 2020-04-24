@@ -1,4 +1,4 @@
-# Magento module: ScandiPWA_M2Patches
+# Patches for Magento 2
 
 Provides a patch for following issues:
 - email sending issue - when sending Email via SES AWS service an error appears: `554 Transaction failed: Expected disposition, got =.` (Fixed in magento version 2.3.5.)
