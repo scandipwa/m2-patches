@@ -8,6 +8,8 @@ namespace ScandiPWA\M2Patches\MessageQueue;
 
 use Magento\Framework\MessageQueue\PoisonPill\PoisonPillCompareInterface;
 use Magento\Framework\MessageQueue\PoisonPill\PoisonPillReadInterface;
+use Magento\Framework\MessageQueue\CallbackInvokerInterface;
+use Magento\Framework\MessageQueue\QueueInterface;
 
 /**
  * Class CallbackInvoker to invoke callbacks for consumer classes
