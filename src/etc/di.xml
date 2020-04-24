@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ScandiPWA_M2Patches
+ *
+ * @category    Scandiweb
+ * @package     ScandiPWA_M2Patches
+ * @author      Vadims Petrovs <info@scandiweb.com>
+ * @copyright   Copyright (c) 2020 Scandiweb, Ltd (https://scandiweb.com)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Framework\Mail\Message" type="ScandiPWA\M2Patches\Mail\Message" />
+    <preference for="Magento\Framework\Mail\MimePart" type="ScandiPWA\M2Patches\Mail\MimePart" />
+    <preference for="Magento\Framework\Mail\Test\Unit\MessageTest" type="ScandiPWA\M2Patches\Mail\Test\Unit\MessageTest" />
+</config>
