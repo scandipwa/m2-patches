@@ -3,7 +3,7 @@
   "description": "Patches for M2 specific to ScandiPWA",
   "type": "magento2-module",
   "require": {
-    "magento/magento2-base": "<2.3.5"
+    "magento/magento2-base": "2.3.5"
   },
   "autoload": {
     "files": [
